@@ -10,12 +10,12 @@ function quickSort(arr){
             left.push(arr[i])
         }
         else{
-            right.push(arr[i])
+            right.push(arr[i]) 
         }
     }
     return [...quickSort(left),pivot,...quickSort(right)]
 }
 
-let arr = [6,2,9,1,0,3,8,5]
+let arr = [6,2,1,0,3,8,5]
 
 console.log(quickSort(arr))

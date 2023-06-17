@@ -1,9 +1,9 @@
-function insertion(arr){
+function insertionSort(arr){
     for(let i=1;i<arr.length;i++){
         let key = arr[i]
         let j= i-1
 
-        while(j>=0&&arr[j]>key){
+        while(j>=0 && arr[j]>key){
             arr[j+1] = arr[j]
             j--
         }
@@ -11,3 +11,5 @@ function insertion(arr){
     }
     return arr
 }
+let arr = [4,7,2,5,9,1,3]
+console.log(insertionSort(arr))

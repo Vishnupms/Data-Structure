@@ -23,6 +23,14 @@ class Stack{
         this.items.splice(index,1)
         console.log(index)
     }
+    updateAtIndex(index,val){
+        if(index<0||index>=this.items.length){
+            console.log("invalid index")
+            return;
+        }
+        this.items[index] = val
+        console.log("element updated sucessfull")
+    }
 }
 
 const stack = new Stack()
@@ -32,4 +40,5 @@ stack.push(98)
 stack.push(20)
 stack.push(50)
 stack.deleteMiddle()
+stack.updateAtIndex(0,8)
 stack.print()
